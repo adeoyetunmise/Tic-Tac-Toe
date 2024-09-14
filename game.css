@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.input-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-div input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-div input:focus{
+    border-color: #1564ee;
+    outline: none;
+}
+
+.input-div input::placeholder{
+    font-size: 12px;
+    color: #ccc;
+}
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid white;
+    line-height: 75px;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 0 rgb(223, 217, 217);
+    
+}
+
+#gameContainer{
+    font-family: 'permanent marker', cursive;
+    text-align: center;
+    display: grid;
+    gap: 25px;
+    color: white;
+   
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 265px;
+    margin: auto;
+    gap: 15px;
+    color: white;
+   
+}
+
+#statusText{
+    color: white;
+}
+
+#restartBtn{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+    outline: none;
+    margin-left: 95px;
+    font-family: 'permanent marker', cursive;
+    /* box-shadow: 0 4px 0 0 rgb(57, 55, 55); */
+}
+
+#restartBtn:hover{
+    background-color: rgb(202, 195, 195);
+}
+
+#restartBtn:focus{
+    background-color: gray;
+}
